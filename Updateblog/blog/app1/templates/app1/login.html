@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block page_title %} Log In{% endblock  %}
+
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'app1/addpost.css' %}"/>
+{% endblock  %}
+
+
+
+{% block header %}
+    <nav>
+        <h1>Log In</h1>
+    </nav>
+{% endblock %}
+
+
+
+{% block content %}
+    <form method='POST' action="">
+        
+        {{ forms }}
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock  %}
