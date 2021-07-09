@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block page_title %} Sing Up{% endblock  %}
+
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'app1/addpost.css' %}"/>
+{% endblock  %}
+
+
+
+{% block header %}
+    <nav>
+        <h1>Sing Up</h1>
+    </nav>
+{% endblock %}
+
+
+
+{% block content %}
+    <form method='POST' action='/'>
+        
+        {{ forms }}
+        <br>
+        <button>Submit</button>
+    </form>
+{% endblock  %}
